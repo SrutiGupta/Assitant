@@ -1,1 +1,22 @@
+# Environment variables
 .env
+.env.local
+.env.production
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploads
+uploads/
+public/uploads/
