@@ -6,7 +6,7 @@ import axios from 'axios';
 
 export const userDataContext=createContext()
 const Usercontext = ({children}) => {
-    const serverUrl=import.meta.env.VITE_BACKEND_URL;
+    const serverUrl=import.meta.env.VITE_BACKEND_URL || "https://assitant-su14.onrender.com";
     const[userData,setUserData]=useState(null)
     const [frontendImage, setFrontendImage] = useState(null);
     const [backendImage, setBackendImage] = useState(null);

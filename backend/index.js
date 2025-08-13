@@ -12,7 +12,7 @@ import geminiResponse from './gemini.js';
 
 const app = express();
 app.use(cors({
-    origin : process.env.FRONTEND_URL,
+    origin : process.env.FRONTEND_URL || "https://assitant-gamma.vercel.app",
     credentials: true,
 }))
 const port = process.env.PORT || 5000;
